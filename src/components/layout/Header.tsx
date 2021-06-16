@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/layout";
+import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
@@ -14,8 +14,9 @@ const Header = () => {
     >
       <Link to="/">
         <Heading as="h1" size="sm">
-          vite-react-chakra-starter
+          UA Check
         </Heading>
+        <Text fontSize={["xs", "sm"]}>User Agent Detect</Text>
       </Link>
 
       <Box marginLeft="auto">
