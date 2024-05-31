@@ -1,18 +1,20 @@
-import { defineConfig } from 'vite'
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import { resolve } from "path";
+import react from '@vitejs/plugin-react-swc';
+import million from 'million/compiler';
+import { defineConfig } from 'vite';
+import checker from 'vite-plugin-checker';
+import tsConfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()],
-  esbuild: {
-    jsxInject: `import React from 'react'`
+  plugins: [
+    million.vite({ auto: true }),
+    react(),
+    checker({
+      typescript: true,
+    }),
+    tsConfigPaths(),
+  ],
+  server: {
+    open: true,
   },
-  resolve: {
-    alias: {
-      components: resolve(__dirname, "src/components"),
-      styles: resolve(__dirname, "src/styles"),
-      routes: resolve(__dirname, "src/routes")
-    }
-  },
-})
+});

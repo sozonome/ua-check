@@ -1,15 +1,15 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from '@chakra-ui/react';
 
 export const theme = extendTheme({
   fonts: {
-    heading: "Raleway, sans-serif",
-    body: "Inter, sans-serif",
+    heading: 'Raleway, sans-serif',
+    body: 'Inter, sans-serif',
   },
   components: {
     // Button: {
     // }
   },
   config: {
-    initialColorMode: "light",
+    initialColorMode: 'light',
   },
 });

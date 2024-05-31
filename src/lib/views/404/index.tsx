@@ -1,12 +1,18 @@
-import { Image } from "@chakra-ui/image";
-import { Box, Grid, Heading, Link, Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
-import { useHistory } from "react-router-dom";
+import {
+  Box,
+  Button,
+  Grid,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 
 const Page404 = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
-  const handleBackToHome = () => history.push("/");
+  const handleBackToHome = () => navigate('/');
 
   return (
     <Grid gap={4} textAlign="center">

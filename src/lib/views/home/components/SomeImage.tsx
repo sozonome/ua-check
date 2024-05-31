@@ -1,13 +1,11 @@
-import { Box, Link } from "@chakra-ui/layout";
-import { Image } from "@chakra-ui/image";
-import { useBreakpointValue } from "@chakra-ui/react";
+import { Box, Image, Link, useBreakpointValue } from '@chakra-ui/react';
 
 const SomeImage = () => {
-  const imageSize  = useBreakpointValue({
+  const imageSize = useBreakpointValue({
     base: 150,
     sm: 200,
-    md: 400
-  })
+    md: 400,
+  });
 
   return (
     <>

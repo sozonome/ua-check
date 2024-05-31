@@ -1,20 +1,17 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
 
 // fonts
-import "@fontsource/raleway/latin.css";
-import "@fontsource/inter/latin.css";
+import '@fontsource/raleway/latin.css';
+import '@fontsource/inter/latin.css';
 
-import App from "./App";
+import App from './App';
 
-import { theme } from "./styles/customTheme";
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
+root.render(
   <StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
+    <App />
   </StrictMode>,
-  document.getElementById("root")
 );

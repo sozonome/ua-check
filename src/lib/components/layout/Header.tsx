@@ -1,6 +1,7 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
-import { Link } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   return (
@@ -16,7 +17,7 @@ const Header = () => {
         <Heading as="h1" size="sm">
           UA Check
         </Heading>
-        <Text fontSize={["xs", "sm"]}>User Agent Detect</Text>
+        <Text fontSize={['xs', 'sm']}>User Agent Detect</Text>
       </Link>
 
       <Box marginLeft="auto">

@@ -1,6 +1,5 @@
-import { Box, Link } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
-import { AiFillGithub } from "react-icons/ai";
+import { Box, Button, Link } from '@chakra-ui/react';
+import { AiFillGithub } from 'react-icons/ai';
 
 const CTASection = () => {
   return (
