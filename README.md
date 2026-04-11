@@ -1,6 +1,9 @@
-# vite-react-chakra-starter
+> [!WARNING]
+> This project has been archived. The ua-check tool has been moved to https://tools.sznm.dev/ua-check
 
-![vite-react-chakra-starter](https://socialify.git.ci/sozonome/vite-react-chakra-starter/image?description=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+# ua-check
+
+![vite-react-chakra-starter](https://socialify.git.ci/agustinusnathaniel/ua-check/image?description=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
 
 This is a project bootstrapped with [`@vitejs/app`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) (`react-ts`), added with [Chakra UI](https://chakra-ui.com) and [TypeScript](https://www.typescriptlang.org) setup.
 
